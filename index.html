@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Práctica 2 SD</title>
 
+	<!-- SCRIPTS DE PETICIONES -->
+
+	<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script src="credencialesFlickr.js"></script>
+
+	<!-- ESTILOS -->
+	
+	<link rel="stylesheet" type="text/css" href="estilos.css" />
+
+</head>
+<body>
+
+	<h1>PRACTICA SD 2</h1>
+
+	<div id="titulo-form" class="form-control-wrapper menu-form">
+		<div class="form-group add-right-margin">
+			
+		</div>
+	</div>
+
+	<div class="barra_busqueda">
+		<nav>
+			<form id="search" method="post">
+				<div>
+					<input type="text" class="form-control" id="titulo-text" placeholder="">			
+					<button id="boton-enviar" onClick="getImagesAndHideForm()" class="btn btn-info">Buscar</button>
+				</div>
+			</form>
+		</nav>
+	</div>
+
+
+	<!-- CONTENEDOR DE FOTOS -->
+		<div id="content">
+			<div class="container">
+				<div id="contenedor-fotos" class="content">
+
+					<!-- FOTOS PEQUEÑAS -->
+					<div id="#contenedor_imagenes" class="grid sequenced images">
+						<!-- AQUI SE CARGARÁN LAS FOTOS -->
+					</div>
+					<!-- FIN FOTOS PEQUEÑAS -->
+
+					<!-- FOTO GRANDE -->
+					<div class="preview">
+						<button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
+						<div class="description description--preview"></div>
+					</div>
+					<!-- FIN FOTO GRANDE -->
+
+				</div>
+			</div>
+		</div>
+		<!-- FIN CONTENEDOR DE FOTOS -->
+
+
+
+</body>
+</html>
